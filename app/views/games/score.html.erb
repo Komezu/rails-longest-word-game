@@ -1,0 +1,13 @@
+<div class="container-main">
+  <h1 class="text-center">Results</h1><br>
+  <p>
+    <% if @message == 'grid_fail' %>
+      Sorry, but <strong><%= @word %></strong> cannot be built out of <%= @grid.join(', ') %>.
+    <% elsif @message == 'english_fail' %>
+      Sorry, but <strong><%= @word %></strong> does not seem to be a valid English word.
+    <% elsif @message == 'success' %>
+      <strong>Congratulations!</strong> <%= @word %> is a valid English word!
+    <% end %>
+  </p>
+  <%= link_to 'Play again', new_path %>
+</div>
