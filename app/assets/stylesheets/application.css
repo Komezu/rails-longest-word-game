@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+h5 {
+  margin: 10px auto;
+}
+
 .text-center {
   text-align: center;
 }
@@ -37,4 +41,13 @@ a {
   border-radius: 2px;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
   text-shadow: 0 0 1px white;
+}
+
+#result {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.link-box {
+  text-align: center;
 }
